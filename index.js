@@ -33,6 +33,6 @@ app.get('/' , (req , res) => {
 
 app.use('/api' , apiRoute)
 
-server.listen(5001 , () => {
-    console.log(`server started at http://localhost:5001`);
+server.listen( process.env.PORT || 5001 , () => {
+    // console.log(`server started at http://localhost:5001`);
 })
